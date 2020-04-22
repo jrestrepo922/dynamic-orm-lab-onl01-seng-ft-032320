@@ -61,11 +61,11 @@ class InteractiveRecord
 
   def self.find_by(attribute)
 
-    if attribute.keys[0] == self.column_names[0]
+    if attribute.keys[0].to_s == self.column_names[0]
 
-    elsif attribute.keys[0] == self.column_names[1]
+    elsif attribute.keys[0].to_s == self.column_names[1]
 
-    elsif attribute.keys[0] == self.column_names[2]
+    elsif attribute.keys[0].to_s == self.column_names[2]
 
     end
     binding.pry
