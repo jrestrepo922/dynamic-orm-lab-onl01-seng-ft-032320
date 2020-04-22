@@ -36,7 +36,7 @@ class InteractiveRecord
     binding.pry
   end
 
-
+# INSERT INTO TABLE songs(name, grade) VALUES("Tom", 10)
 
 
 
