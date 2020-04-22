@@ -5,7 +5,7 @@ class InteractiveRecord
 
   def self.table_name
     self.to_s.downcase.pluralize # returns  "songs"
-  end 
+  end
 
   def self.column_names
     DB[:conn].results_as_hash = true
@@ -14,6 +14,6 @@ class InteractiveRecord
 
     table_info = DB[:conn].execute(sql)
 
-    
-  end 
+
+  end
 end
