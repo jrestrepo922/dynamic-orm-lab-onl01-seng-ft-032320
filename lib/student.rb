@@ -10,5 +10,5 @@ class Student < InteractiveRecord
   }
 
 
-  
+
 end
