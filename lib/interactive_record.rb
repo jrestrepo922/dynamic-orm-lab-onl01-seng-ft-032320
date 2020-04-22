@@ -65,7 +65,7 @@ class InteractiveRecord
     elsif attribute.keys[0] == self.column_names[1]
 
     elsif attribute.keys[0] == self.column_names[2]
-      
+
     binding.pry
   end
 
