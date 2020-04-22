@@ -32,8 +32,7 @@ class InteractiveRecord
   end
 
   def col_names_for_insert
-    self.class.column_names.delete_if { |column| column == "id"}.join(", ")
-    binding.pry
+    self.class.column_names.delete_if { |column| column == "id"}.join(", ") # "name, grade"
   end
 
 # INSERT INTO TABLE songs(name, grade) VALUES("Tom", "10")
