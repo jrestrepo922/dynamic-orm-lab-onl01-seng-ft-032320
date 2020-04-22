@@ -31,7 +31,7 @@ class InteractiveRecord
     self.class.table_name #"songs"
   end
 
-  def col_name_for_insert
+  def col_names_for_insert
     self.class.column_names.delete_if { |column| column == "id"}
     binding.pry
   end
